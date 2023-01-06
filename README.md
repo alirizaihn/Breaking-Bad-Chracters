@@ -1,43 +1,95 @@
-# fourth-week-homework
+# Breaking Bad
 
-1- https://breakingbadapi.com/  API kullanılarak bir uygulama geliştirilecektir. Aşağıda detaylar verilmiştir.
---
+### Description
 
-• Uygulama tablı yapıda olacaktır.(Açılış tabbar) ve 3 ayrı tab olacaktır.
-• Activity indicator kullanılmalıdır.
-• Alert gösterimi yapılmalıdır.
+It is an application that lists the episodes and characters of the Breakin Bad series. In this application you can also create notes about the episodes and view the IMDB page.
 
-## 1.Tab - Karakterler:
+### Libraries Used
 
-• Bu ekranda karakterler listelenecektir.
-• CollectionViewda en az karakterin ismi, doğum günü ve takma adı olacaktır.
-• Listeden karaktere bastığımda karakter detay ekranına yönlenmelidir.
+<li>'SDWebImage'</li>
+<li>'MaterialActivityIndicator'</li>
+<li>'SwiftAlertView', '~> 2.2.1'</li>
 
-Karakter Detay Ekranı:
+### XCODE Version
+<li>XCode Version 14.1</li>
 
-• Karakterin görseli ile birlikte en az 4 bilgisi yer almalıdır.
-• Ekranda bir button olmalı ve bu button karakterin sözleri(alıntıları) ekranına yönlenmelidir.
+### Swift Version
+<li>Swift 5 </li>
 
-Karakterin Sözleri-Alıntıları Ekranı:
+### Pattern
 
-• Ekranda karakterin sözleri-alıntıları listelenmelidir.
+    MVC
+    
+### API
+<li>https://breakingbadapi.com/</li>
 
-## 2.Tab - Bölümler:
+### Images
 
-• Ekranda bölümler listelenmelidir.
-• TableViewda en az ismi ve sezonu bulunmalıdır.
-• Listeden bölüme bastığımda ekranın üstünde bir detay view açılmalıdır.(ViewController değil View olacak).
-• View üzerinde bölümdeki oyuncular yer almalı sağ üst köşede kapat butonu olmalı.
-• Kapat butonu aksiyonu delegate ile yönetilebilmelidir.(Kapata bastığımda liste ekranında print yazılması yeterlidir.)
+  #### Character List
+<div align="center">
+<table>
+<tr>
+<td><img src="screenshots/2.png" alt="drawing" width="275"/></td>  
+</td>  
+</tr>
+</table>
+</div>
+<ul>
+<li>The Character List screen lists the characters with the data provided by https://breakingbadapi.com/. </li>
+</ul>
 
-## 3.Tab- IMDB Sayfası
- 
-• Ekranda Webview ile IMDBde dizinin sayfası açılmalıdır.
+#### Character Detail
 
-2- Clean Code - 1, 2, 3, 4 chapterlar özetlenmelidir.
---
+<div align="center">
+<table>
+<tr>
+<td><img src="screenshots/3.png" alt="drawing" width="275"/></td>  
+</td>  
+</tr>
+</table>
+</div>
+    <li>Each character has its image and information on the detail page.</li>
+    <li>The quotes of the character can be accessed with the button here..</li>
+    
 
-Kolay gelsin :)
+#### Quotes
+
+<div align="center">
+<table>
+<tr>
+<td><img src="screenshots/4.png" alt="drawing" width="275"/></td>  
+</td>  
+</tr>
+</table>
+</div>
+    <li>The Quotes screen lists quotes for characters with data provided by https://breakingbadapi.com/ </li>
+   
+#### Episodes
+
+<div align="center">
+<table>
+<tr>
+<td><img src="screenshots/5.png" alt="drawing" width="275"/></td>  
+<td><img src="screenshots/6.png" alt="drawing" width="275"/></td>  
+</td>  
+</tr>
+</table>
+</div>
+    <li>Episodes is a screen where the episodes of the series are listed by season.</li>
+    <li>By clicking on the episodes, the list of characters taking part in the relevant chapter is shown. </li>
+
+#### IMDB
+
+<div align="center">
+<table>
+<tr>
+<td><img src="screenshots/7.png" alt="drawing" width="275"/></td>  
+</td>  
+</tr>
+</table>
+</div>
+    <li>The IMDB page of the series is shown on the IMDB screen.</li>
+
 
 
 
